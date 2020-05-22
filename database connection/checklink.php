@@ -1,6 +1,6 @@
  <?php
 
- require_once('sqlinfo.inc.php');
+ require_once('sqlinfo.php');
 
   $conn = @mysqli_connect($sql_host,
 		$sql_user,
