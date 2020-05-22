@@ -87,6 +87,10 @@ header ul li a:hover {
     transition: 1s;
 }
 
+main{
+    font-family: 'Lora', serif;
+}
+
 /* header .menu-toggle{
     display: none;
 }
