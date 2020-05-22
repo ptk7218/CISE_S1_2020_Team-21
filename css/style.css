@@ -37,6 +37,7 @@ header ul{
     margin: 0px;
     padding: 0px;
     list-style: none;
+    font-family: 'Chelsea Market', serif;
     
 }
 header ul li {
@@ -63,16 +64,15 @@ header ul li ul li{
 header ul li ul li a{
     padding: 10px;
     background:white;
-    color: #b3b3b3;
+    color: #000000;
 }
 
 header ul li ul li a.Logout {
     color: red;
 }
 
-
 header ul li ul li a:hover{
-    background: #008489;
+    background: #25df00;
 }
 
 header ul li a{
@@ -84,7 +84,7 @@ header ul li a{
 
 header ul li a:hover {
     background: #004042;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 /* header .menu-toggle{
