@@ -88,15 +88,32 @@ header ul li a:hover {
     transition: 1s;
 }
 
-main{
-    font-family: 'Lora', serif;
-}
-
 /* header .menu-toggle{
     display: none;
 }
-*/
 
+
+/* CONTENT */
+
+.content{
+    width:90%;
+    margin: 30px auto 30px;
+    border: 1px solid red;
+}
+
+.content .main-content{
+    width:70%;
+    float: left;
+    border: 1px solid blue;
+
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    border: 1px dashed green;
+    height: 300px;
+}
 /* MEDIA QUERIES */
 
 
