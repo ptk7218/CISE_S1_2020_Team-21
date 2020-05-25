@@ -102,10 +102,7 @@
                 </div>
 
             </div>
-        
            
-
-
           <!-- the link with all evidence items-->
           <div class="topic-link">
           <h2>SE Method</h2>  
@@ -149,7 +146,6 @@
         
          </div>
          
-
     <!--footer-->
     <div class= "footer">
         <div class="footer-content">
@@ -162,7 +158,7 @@
                     <span><i class="fas fa-phone"></i>&nbsp; 0800-12341234</span>
                     <span><i class="fas fa-envelope"></i>&nbsp; info@autuni.ac.nz</span>
                 </div>
-
+                
                 <div class="socials">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
