@@ -1,12 +1,10 @@
 <?php
 
 // Include file with sql details
-
-
-	$sql_host="cmslamp14.aut.ac.nz";
-	$sql_user="ptk7218"; //e.g. ptk7218
-	$sql_pass="62217wsxl"; // ur password
-	$sql_db="ptk7218"; //e.g. ptk7218
+	$sql_host="us-cdbr-east-06.cleardb.net";
+	$sql_user="b532b2d7a7e646"; //e.g. ptk7218
+	$sql_pass="3cff3c83"; // ur password
+	$sql_db="heroku_4f8788ce9161d67"; //e.g. ptk7218
 //	$sql_tble=" "; select which table u want to link
 
 
