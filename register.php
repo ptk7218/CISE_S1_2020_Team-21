@@ -19,12 +19,13 @@
     </head>
 
     <body>
-
+    <!-- header -->
     <?php include("includes/header.php"); ?>
 
     
       <div class="auth-content">
-      <form action="register.html" method = "post">
+
+      <form action="register.php" method = "post">
           <h2 class="form-title">Register</h2>
 
           <div>
