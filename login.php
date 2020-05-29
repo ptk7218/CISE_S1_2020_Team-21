@@ -21,7 +21,7 @@
 
     <body>
 
-    <?php include(ROOT_PATH . "/includes/header.php"); ?>
+    <?php include("includes/header.php"); ?>
 
     
       <div class="auth-content">
