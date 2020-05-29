@@ -1,3 +1,4 @@
+<?php include("controllers/users.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
     <!-- head -->
@@ -45,10 +46,10 @@
 
           <div>
             <label for "radio">Affiliation:<br></label>
-		    <input type = "radio" name = "radio" value = "institution" />
-			<label for ="institution">institution</label>
-			<input type = "radio" name = "radio" value = "organisation" />
-			<label for ="organisation">organisation</label>       
+		        <input type = "radio" name = "radio" value = "institution" />
+			      <label for ="institution">institution</label>
+		      	<input type = "radio" name = "radio" value = "organisation" />
+		      	<label for ="organisation">organisation</label>       
           </div>
 
           <div>
