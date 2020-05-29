@@ -2,12 +2,17 @@
 
 require('sqlinfo.php');
 
-$sql = "SELECT * FROM seerusers";
+function selectAll($table)
+{
+global $conn;
+$sql = "SELECT * FROM $table";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
-$users = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+$records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+return $records;
+}
 
+$seerusers = selectAll('seerusers');
 echo "<pre>", print_r($seerusers), "</pre>";
 
-
-
+?>
