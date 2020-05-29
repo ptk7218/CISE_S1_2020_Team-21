@@ -23,7 +23,7 @@
 
     <body>
      
-    <?php include(ROOT_PATH . "includes/header.php"); ?>
+    <?php include(ROOT_PATH . "/includes/header.php"); ?>
     
     
             <p class = "intro">
