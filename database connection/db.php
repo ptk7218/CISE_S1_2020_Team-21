@@ -7,6 +7,7 @@ $stmt = $conn->prepare($sql);
 $stmt->execute();
 $users = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
-var_dump($seerusers);
+echo "<pre>", print_r($seerusers), "</pre>";
+
 
 
