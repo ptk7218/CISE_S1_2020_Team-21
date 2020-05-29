@@ -38,9 +38,9 @@ include("database connection/sqlinfo.php");
        $stmtinsert = $sql_db->prepare($sql);
        $result = $stmtinsert->execute([$username, $fname, $lname, $affiliation, $email, $password]);
        if($result){
-         echo 'successfully saved';
+         echo '<p>successfully saved</p>';
        }else{
-         echo 'there are errors while saving the data.';
+         echo '<p>there are errors while saving the data.</p>';
        }
     }
 ?>
