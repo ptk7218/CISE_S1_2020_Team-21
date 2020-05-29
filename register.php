@@ -24,43 +24,24 @@ include("database connection/sqlinfo.php");
     <body>
     <!-- header -->
     <?php include("includes/header.php"); ?>
-    <?php 
-    if(isset($_POST['register-btn'])){
 
-       $username = $_POST['username'];
-       $fname = $_POST['fname'];
-       $lname = $_POST['lname'];
-       $affiliation = $_POST['radio'];
-       $email = $_POST['email'];
-       $password = $_POST['password'];
-       
-       $sql = "INSERT INTO seerusers (username, fname, lname, radio, email, password) values(?, ?, ?, ?, ?)";
-       $stmtinsert = $sql_db->prepare($sql);
-       $result = $stmtinsert->execute([$username, $fname, $lname, $affiliation, $email, $password]);
-       if($result){
-         echo '<p>successfully saved</p>';
-       }else{
-         echo '<p>there are errors while saving the data.</p>';
-       }
-    }
-?>
-    
+  
       <div class="auth-content">
 
-      <form action="register.php" method = "post">
+      <form action="includes/signup.inc.php" method = "post">
           <h2 class="form-title">User Register</h2>
 
           <div>
             <label>Username</label>
-              <input type="text" name="username" class="text-input">
+              <input type="text" name="username" class="text-input" placeholder="username">
           </div>
           <div>
               <label>First name</label>
-              <input type="text" name="fname" class="text-input">
+              <input type="text" name="fname" class="text-input" placeholder="first name">
           </div>
           <div>
               <label>Last name</label>
-              <input type="text" name="lname" class="text-input">
+              <input type="text" name="lname" class="text-input" placeholder="last name">
           </div>
 
           <p></p>
@@ -75,17 +56,17 @@ include("database connection/sqlinfo.php");
 
           <div>
             <label>Email</label>
-            <input type="email" name="email" class="text-input">
+            <input type="email" name="email" class="text-input" placeholder="email">
           </div>
         
           <div>
             <label>Password</label>
-            <input type="password" name="password" class="text-input">
+            <input type="password" name="password" class="text-input" placeholder="password">
          </div> 
 
          <div>
             <label>Password Confirmation</label>
-            <input type="password" name="passwordConf" class="text-input">
+            <input type="password" name="passwordConf" class="text-input" placeholder="Repeat password">
         </div>
 
         <div>

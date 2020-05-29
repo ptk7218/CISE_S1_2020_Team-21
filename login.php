@@ -26,18 +26,18 @@
     
       <div class="auth-content">
 
-      <form action="login.html" method = "post">
+      <form action="includes/login.inc.php" method = "post">
           <h2 class="form-title">Login</h2>
 
           <div>
               <label>Username</label>
-              <input type="text" name="username" class="text-input">
+              <input type="text" name="username" class="text-input" placeholder="Username/Email...">
           </div>
           
         
           <div>
             <label>Password</label>
-            <input type="password" name="password" class="text-input">
+            <input type="password" name="password" class="text-input" placeholder="Password...">
          </div> 
 
         <div>
