@@ -1,3 +1,4 @@
+<?php include("path.php"); ?>
 <?php include("controllers/users.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@
 
     <body>
     <!-- header -->
-    <?php include("includes/header.php"); ?>
+    <?php include(ROOT_PATH . "includes/header.php"); ?>
 
     
       <div class="auth-content">
