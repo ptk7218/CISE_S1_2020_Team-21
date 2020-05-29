@@ -1,7 +1,6 @@
-<?php include("path.php"); ?>
-<?php include("controllers/users.php"); ?>
+<?php include("database connection/sqlinfo.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <!-- head -->
     <head>
         <meta charset = "UTF-8">
@@ -23,7 +22,25 @@
     <body>
     <!-- header -->
     <?php include("includes/header.php"); ?>
+    <?php 
+    if(isset($_POST['register-btn'])){
 
+       $username = $_POST['username'];
+       $fname = $_POST['fname'];
+       $lname = $_POST['lname'];
+       $affiliation = $_POST['radio'];
+       $email = $_POST['email'];
+       $password = $_POST['password'];
+       
+       $sql = "INSERT INTO seerusers (username, fname, lname, radio, email, password) values(?, ?, ?, ?, ?)";
+       $stmtinsert = $sql_db->prepare($sql);
+       $result = $stmtinsert->execute([$username, $fname, $lname, $affiliation, $email, $password]);
+       if($result){
+         echo 'successfully saved';
+       }else{
+         echo 'there are errors while saving the data.';
+       }
+      ?>
     
       <div class="auth-content">
 
@@ -36,11 +53,11 @@
           </div>
           <div>
               <label>First name</label>
-              <input type="text" name="firstname" class="text-input">
+              <input type="text" name="fname" class="text-input">
           </div>
           <div>
               <label>Last name</label>
-              <input type="text" name="lastname" class="text-input">
+              <input type="text" name="lname" class="text-input">
           </div>
 
           <p></p>
@@ -69,20 +86,6 @@
         </div>
 
         <div>
-            <label for "radio">User role:<br></label>
-		    <input type = "radio" name = "radio2" value = "admin" />
-			<label for ="admin">admin</label>
-			<input type = "radio" name = "radio2" value = "moderator" />
-            <label for ="moderator">moderator</label>  
-            <input type = "radio" name = "radio2" value = "user" />
-            <label for ="user">user</label>  
-            <input type = "radio" name = "radio2" value = "analyst" />
-            <label for ="analyst">analyst</label> 
-            <input type = "radio" name = "radio2" value = "sdm" />
-			<label for ="sdm">member of SDM class</label>  
-        </div>
-
-        <div>
             <button type="submit" name="register-btn" class="btn btn-big">Register</button>
         </div>
         <p>Or <a href="login.html">Sign In</a></p>
@@ -91,9 +94,11 @@
       </div>
           
 
-    <!--footer-->
-    <?php include("includes/footer.php"); ?>
+      <!--footer-->
+      <?php include("includes/footer.php"); ?>
 
-    </main>
-</body>
-</html>
+    
+    </body>
+  </html>   
+  
+
