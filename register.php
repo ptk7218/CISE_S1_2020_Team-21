@@ -15,7 +15,7 @@
         <!-- Custom Styling -->
         <link rel="stylesheet" type="text/css" href = "css/style.css">
 
-        <title>Register page</title>  
+        <title>User Register page</title>  
     </head>
 
     <body>
@@ -26,10 +26,10 @@
       <div class="auth-content">
 
       <form action="register.php" method = "post">
-          <h2 class="form-title">Register</h2>
+          <h2 class="form-title">User Register</h2>
 
           <div>
-              <label>Username</label>
+            <label>Username</label>
               <input type="text" name="username" class="text-input">
           </div>
           <div>
