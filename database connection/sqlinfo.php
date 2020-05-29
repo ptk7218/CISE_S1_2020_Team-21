@@ -14,5 +14,7 @@ $conn - new MySQLi($sql_host, $sql_user, $sql_pass, $sql_db);
 if($conn->connect_error){
 	die('Database connection error:' . $conn->connect_error);
 }
-
+else{
+	
+}
 ?>
