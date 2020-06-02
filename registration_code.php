@@ -17,7 +17,7 @@ $sql = "INSERT INTO tbluser (username,Firstname,Lastname,Affiliation,Email,Passw
 $result = mysqli_query($conn, $sql);
 if($result)
 {
-	header("Location: Login.php");
+	header("Location: login.php");
 }
 else
 {
