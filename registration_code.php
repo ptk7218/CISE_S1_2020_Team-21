@@ -8,7 +8,7 @@ $username = $fname = $lname = $radio = $email = $password = $pwd = '';
 $username = $_POST['username'];
 $fname = $_POST['firstname'];
 $lname = $_POST['lastname'];
-$gender = $_POST['radio'];
+$radio = $_POST['radio'];
 $email = $_POST['email'];
 $pwd = $_POST['password'];
 $password = MD5($pwd);
