@@ -1,5 +1,5 @@
 <?php 
-include("database connection/sqlinfo.php"); 
+include_once ("connection.php"); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,11 +37,11 @@ include("database connection/sqlinfo.php");
           </div>
           <div>
               <label>First name</label>
-              <input type="text" name="fname" class="text-input" placeholder="first name">
+              <input type="text" name="firstname" class="text-input" placeholder="first name">
           </div>
           <div>
               <label>Last name</label>
-              <input type="text" name="lname" class="text-input" placeholder="last name">
+              <input type="text" name="lastname" class="text-input" placeholder="last name">
           </div>
 
           <p></p>
@@ -53,22 +53,22 @@ include("database connection/sqlinfo.php");
 		      	<input type = "radio" name = "radio" value = "organisation" />
 		      	<label for ="organisation">organisation</label>       
           </div>
-
+        
           <div>
             <label>Email</label>
-            <input type="email" name="email" class="text-input" placeholder="email">
+            <input type="email" name="email" class="text-input" id = "email" placeholder="email">
           </div>
         
           <div>
             <label>Password</label>
-            <input type="password" name="password" class="text-input" placeholder="password">
+            <input type="password" name="password" class="text-input" id = "pwd" placeholder="password">
          </div> 
-
+        <!-- 
          <div>
             <label>Password Confirmation</label>
             <input type="password" name="passwordConf" class="text-input" placeholder="Repeat password">
         </div>
-
+        -->
         <div>
             <button type="submit" name="register-btn" class="btn btn-big">Register</button>
         </div>
