@@ -10,10 +10,10 @@ $fname = $_POST['firstname'];
 $lname = $_POST['lastname'];
 $radio = $_POST['radio'];
 $email = $_POST['email'];
-$pwd = $_POST['password1'];
-$password1 = MD5($pwd);
+$pwd = $_POST['password'];
+$password = MD5($pwd);
 
-$sql = "INSERT INTO tbluser (Firstname,Lastname,Affiliation,Email,Password) VALUES ('$fname','$lname','$radio','$email','$password1')";
+$sql = "INSERT INTO tbluser (username,Firstname,Lastname,Affiliation,Email,Password) VALUES ('$username','$fname','$lname','$radio','$email','$password')";
 $result = mysqli_query($conn, $sql);
 if($result)
 {
