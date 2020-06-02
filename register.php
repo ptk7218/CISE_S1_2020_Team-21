@@ -28,7 +28,7 @@ include_once ("connection.php");
   
       <div class="auth-content">
 
-      <form action="includes/signup.inc.php" method = "post">
+      <form action="registration_code.php" method = "post">
           <h2 class="form-title">User Register</h2>
 
           <div>
