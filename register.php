@@ -61,7 +61,7 @@ include_once ("connection.php");
         
           <div>
             <label>Password</label>
-            <input type="password" name="password1" class="text-input" id = "pwd" placeholder="password">
+            <input type="password" name="password" class="text-input" id = "pwd" placeholder="password">
          </div> 
         <!-- 
          <div>
