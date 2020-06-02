@@ -3,7 +3,7 @@ Here, we write code for registration.
 -->
 <?php
 require_once('connection.php');
-$username = $fname = $lname = $radio = $email = $password1 = $pwd = '';
+$username = $fname = $lname = $radio = $email = $password = $pwd = '';
 
 $username = $_POST['username'];
 $fname = $_POST['firstname'];
