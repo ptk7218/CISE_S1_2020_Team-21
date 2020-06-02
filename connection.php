@@ -1,17 +1,11 @@
+<!--
+in this file we write code for connection with database.
+-->
 <?php
+$conn = mysqli_connect("cmslamp14","ptk7218","62217wsxl","ptk7218");
 
-// Include file with sql details
-	$sql_host="cmslamp14";
-	$sql_user="ptk7218"; //e.g. ptk7218
-	$sql_pass="62217wsxl"; // ur password
-	$sql_db="ptk7218"; //e.g. ptk7218
-//	$sql_tble=" "; select which table u want to link
-
-
-$conn - new MySQLi($sql_host, $sql_user, $sql_pass, $sql_db);
-
-
-if($conn->connect_error){
-	die('Database connection error:' . $conn->connect_error);
+if(!$conn)
+{
+	echo "Database connection faild...";
 }
 ?>

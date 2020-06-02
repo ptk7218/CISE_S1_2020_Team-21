@@ -1,6 +1,3 @@
-<?php include("path.php") ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
     <!-- head -->
@@ -16,14 +13,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Lora&display=swap" rel="stylesheet">
 
         <!-- Custom Styling -->
-        <link rel="stylesheet" type="text/css" href = "css/style.css">
+        <link rel="stylesheet" type="text/css" href = "css/style1.css">
 
         <title>SEER Search</title>  
     </head>
 
     <body>
      
-    <?php include("includes/header.php"); ?>
+    <?php include("includes/header2.php"); ?>
     
     
             <p class = "intro">
